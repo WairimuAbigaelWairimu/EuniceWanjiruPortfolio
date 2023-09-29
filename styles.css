@@ -104,7 +104,6 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    text-transform: capitalize;
     flex-wrap: wrap;
 }
 .card{
@@ -116,7 +115,11 @@ nav {
 .card h3{
     text-transform: capitalize;
 }
-.fa-child-reaching{
+.card .fas{
+    font-size: 3rem;
+    padding: 1em;
+}
+.card .fa-solid{
     font-size: 3rem;
     padding: 1em;
 }
