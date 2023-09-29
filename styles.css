@@ -28,6 +28,7 @@ nav {
   nav ul {
     list-style-type: none;
     margin: 1em;
+    z-index: 999;
   }
   nav li {
     margin-right: 10px;
@@ -37,24 +38,25 @@ nav {
     color: white;
     margin: 1em;
     text-decoration: none;
+    display: none;  
   }
   nav a:hover {
     color: maroon;
   }
-.hero-content{
+.hero .hero-content{
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 1em;
 }
-.text{
+.hero .hero-content .text{
     text-transform: uppercase;
     
 }
-.text h1{
+.hero .hero-content .text h1{
     font-size: 3rem;
 }
-.text h2{
+.hero .hero-content .text h2{
     color: brown;
 }
 .profile-pic img{
@@ -77,31 +79,25 @@ nav {
 .about-me p{
     line-height: 30px;
 }
-.card{
-    background: grey;
-    text-align: center;
-    margin: 0 2em 0 2em;
-    padding: 1em;
-}
 .promises{
     margin-top: 10em;
     background-color: #013220;
     color: white;
 }
-.promises-text{
+.promises .promises-text{
     text-align: center;
     text-transform: capitalize;
     padding-top: 3em;
 }
-.promises-text h3{
+.promises .promises-text h3{
     text-decoration: underline;
     font-size: 1.5rem;
     color: maroon;
 }
-.promises-text h1{
+.promises .promises-text h1{
     font-size: 2rem;
 }
-.what-i-will-fight-for{
+.promises .what-i-will-fight-for{
     width: 100%;
     margin-top: 10em;
     display: flex;
@@ -111,7 +107,15 @@ nav {
     text-transform: capitalize;
     flex-wrap: wrap;
 }
-
+.card{
+    background: grey;
+    text-align: center;
+    margin: 0 2em 0 2em;
+    padding: 1em;
+}
+.card h3{
+    text-transform: capitalize;
+}
 .fa-child-reaching{
     font-size: 3rem;
     padding: 1em;
@@ -162,8 +166,6 @@ footer {
 
 
 
-
-
 @media screen and (min-width: 1180px) {
     .what-i-will-fight-for{
         flex-wrap: nowrap;
@@ -175,5 +177,8 @@ footer {
     }
     .about-me{
         width: 50%;
+    }
+    nav a{
+        display: flex;
     }
   }
